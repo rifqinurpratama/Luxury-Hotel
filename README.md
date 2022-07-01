@@ -1,4 +1,4 @@
-# Sistem Booking Hotel
+# Sistem Reservasi Hotel
  
 Anggota Kelompok:
 - Luthfi Roja Wirawan - 210102032
