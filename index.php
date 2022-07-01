@@ -1,3 +1,8 @@
+<?php 
+//include '../konfigurasi/config.php';
+include 'fragment//header.php';
+//include '../konfigurasi/function.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +14,7 @@
     rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="style/css/table.css">
     <style>
          body {
     background-color: #808080;
@@ -16,36 +22,56 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Luxury Hotel</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse text-right" id="navbarText">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#reservation">Reservation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#receptionist">Receptionist</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#room">Room</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#detail">Detail Room</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="container-fluid banner">
-    <div class="container text-center">
-        <br><br><br>
-        <h4 class="display-6">Welcome To LUXURY HOTEL</h4>
-        <h3 class="display-1">Hello Everyone!</h3>
-    </div>
+  <br><br><br>
+  <div class="container mt-8">
+  <h2>Data Guest</h2>          
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>ID Guest</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>ID Room</th>
+        <th>Type Room</th>
+        <th>Price</th>
+        
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>   
+      <tr>
+        <td>G0001</td>
+        <td>Ujang Martin</td>
+        <td>Martin69@gmail.com</td>
+        <td>08123214732</td>
+        <td>D001</td>
+        <td>Deluxe</td>
+        <td>5000000</td>
+        <td>. . .</td>
+      </tr>
+      <tr>
+        <td>G0002</td>
+        <td>Thomas Slebew</td>
+        <td>ThomSlebew@gmail.com</td>
+        <td>08123213213</td>
+        <td>L001</td>
+        <td>Luxury</td>
+        <td>10000000</td>
+        <td>. . .</td>
+      </tr>
+      <tr>
+        <td>G0003</td>
+        <td>Mamank Recink</td>
+        <td>Mangrecink@gmail.com</td>
+        <td>08124355687</td>
+        <td>S001</td>
+        <td>Standar</td>
+        <td>200000</td>
+        <td>. . .</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
